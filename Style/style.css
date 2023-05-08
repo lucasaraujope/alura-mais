@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundaria: #C0C0C0;
+    --bota-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    /*Essa proprieade cria divisões na página no formarto vertical*/
+    grid-template-columns: 50% 50%;
+}
+
+/*Usamos esse tipo de inserção de imagem quando queremos que seja apenas algo ilustrativo. Porque se ela carregar ou não, não faz diferença*/
+.principal {
+    background-image: url(/Assets/Background.svg);
+    /*Usamos essa propriedade para não repetir a imagem de fundo do site*/
+    background-repeat: no-repeat;
+    /*Usamos essa propriedade para fazer com que a imagem do background ocupe o tamanho inteiro do container que no caso é o elemento pai dele é a section */
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--bota-azul);
+    border-radius: 0.3rem;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundaria);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+    justify-content: center;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.3rem;
+}
+
+.container__texto {
+    font-size: 1rem;
+    color: var(--cinza-secundaria);
+}
+
+.terciario {
+    align-items: center;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secundario__imagem {
+    width: 80%;
+    margin-left: 3.6rem;
+}
+
+.curso__HTML {
+    margin: 2.5rem;
+}
+
+.descricao__titulo__secundario {
+    text-align: center;
+}
+
+.dispositivos {
+    margin: 0 10rem;
+}
+
+.dispositivos__titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.dispositivos__lista {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.dispositivos__itens {
+    margin: 2.5rem 2.5rem 0 1.5rem;
+}
+
+.lista-itens {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.rodape {
+    text-align: center;
+    margin: 8.1rem 10rem 6.2rem 10rem;
+    justify-content: center;
+}
+
+.rodape__logo {
+    margin-bottom: 2.5rem;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    color: var(--branco-principal);
+}
+
+.rodape__itens {
+    font-size: 1rem;
+    margin: 0 1rem 1.5rem 0;
+    list-style: none;   
+}
+
+.rodape__itens a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+
+.rodape__copyright {
+    color: var(--cinza-secundaria);
+    font-size: 0.7rem;
+    font-weight: 400;
+}
